@@ -85,7 +85,7 @@ int Storage::getCategoryTotalCount(const std::string& categoryName)
 {
     if (m_categories.find(categoryName) != m_categories.end())
     {
-        return m_categories[categoryName].getUniqueItemsCount();
+        return m_categories[categoryName].getTotalQuantity();
     }
     return 0;
 }
